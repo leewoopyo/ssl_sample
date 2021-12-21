@@ -1,0 +1,10 @@
+server:
+  port: 8081
+  ssl:
+    enabled: true
+    protocol: TLS
+    key-store: /application/ssl_sample/ssl/ssl_sample.jks
+    key-store-password: changeit
+    key-alias: ssl_sample
+    enabled-protocols:
+    - TLSv1.1, TLSv1.2
