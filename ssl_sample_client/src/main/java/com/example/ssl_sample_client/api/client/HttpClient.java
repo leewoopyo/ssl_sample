@@ -33,10 +33,8 @@ public class HttpClient {
       //Http 요청
       CloseableHttpResponse response = httpClient.execute(request);
 
-      System.out.println(response.toString());
-
+      //응답 결과 출력
       try {
-
         System.out.println("Protocol Verstion   : " + response.getProtocolVersion());                // Protocol Version : HTTP/1.1
         System.out.println("Status Code         : " + response.getStatusLine().getStatusCode());     // Status Code : 200
         System.out.println("Status Message      : " + response.getStatusLine().getReasonPhrase());   // Status Message : OK
